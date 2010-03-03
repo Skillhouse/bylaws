@@ -1,0 +1,441 @@
+\documentclass[10pt,letterpaper,titlepage]{article}
+\usepackage{titletoc}
+
+\usepackage{ifthen,varioref}
+\usepackage{url}
+\usepackage{titlesec}
+\usepackage{fullpage}
+\usepackage{ulem}
+\usepackage{hyperref}
+
+% fix block paragraphs in toc
+\usepackage{parskip}
+% use block paragraphs
+\setlength{\parindent}{0pt}
+%\setlength{\parskip}{\baselineskip}
+\setlength{\parskip}{4pt}
+
+\newcommand\corpname{Gainesville Hackerspace, Inc.}
+\newcommand\approvaldate{March 9, 2010}
+
+\hypersetup{
+    pdfauthor={Ian Taylor},
+    pdftitle={\corpname{} Bylaws},
+    pdfborder={0 0 0},
+    pdfsubject={bylaws},
+    pdfkeywords={bylaws, \corpname},
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    bookmarks=true,
+    colorlinks=false
+}
+
+\titlecontents{section}[1.5em]
+    {}
+    {\contentslabel{2.0em}}
+    {\hspace*{-2.0em}}
+    {\titlerule*[1pc]{.}\contentspage}
+
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\arabic{subsection}}
+\titleformat{\section}{\bfseries\Large}{Article~\thesection}{0.5em}{}
+\titleformat{\subsection}{\bfseries\large}{Section~\thesubsection}{0.5em}{}
+\labelformat{section}{Article~#1}
+\labelformat{subsection}{\protect\iscurrentsection{\thesection}Section~#1}
+\newcommand\iscurrentsection[1]{%
+    \ifthenelse{\equal{#1}{\thesection}}{}{Article~#1~}}
+
+% for things like 1\st 2\nd 3\rd 4\th
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+\renewcommand{\th}[0]{\superscript{th}}
+\newcommand{\st}[0]{\superscript{st}}
+\newcommand{\nd}[0]{\superscript{nd}}
+\newcommand{\rd}[0]{\superscript{rd}}
+
+\title{%
+    \textsc{\LARGE \corpname \\
+    \Large Bylaws
+    }
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Why We Exist}
+\label{whyweexist}
+
+By law, this is the core governing document of \corpname
+
+Amendments are handled as specified in \ref{amendments}
+
+These Bylaws were approved by the Incorporators on \approvaldate
+
+\subsection{General Purposes}
+\label{genpurp}
+
+Said corporation is organized exclusively for charitable, educational, and
+scientific purposes within the meaning of Section 501(c)(3) of the Internal
+Revenue Code, or the corresponding subsection of any future federal tax code.
+The mission of the corporation is to improve the world by creatively rethinking
+technology. 
+
+\subsection{Specific Purposes}
+
+Subject to and within the limits of \ref{genpurp}, the corporation shall
+\begin{itemize}
+    \item Build or lease and maintain spaces suitable for technical, artistic
+          and social collaboration.
+    \item Collaborate on all forms of technology, culture and craft in new and
+          interesting ways.
+    \item Apply the results of its work to cultural, charitable and
+          scientific causes.
+    \item Share its research and discoveries, using what is learned to
+          teach others.
+    \item Recruit and develop members to participate in these activities.
+\end{itemize}
+
+\section{Who We Are}
+
+\subsection{Designation of Membership Classes}
+ 
+\corpname{} has a voting membership class and a non-voting membership class. 
+
+\subsection{Membership Class Qualifications}
+ 
+Any person who supports the purposes laid out in \ref{whyweexist} of these
+bylaws is qualified to become a member.
+
+\subsection{Voting Membership Class Election}
+ 
+Any member may nominate a qualified person to be a voting member.  Any eligible
+person may be elected as a voting member at any regular meeting upon payment of
+their first periodic dues and visual approval of 51\% of voting members
+present.
+For purposes of these bylaws, all persons listed as initial directors on the
+Articles of Incorporation shall be considered the initial voting members.
+
+\subsection{Voting Membership Dues}
+\label{votmemdue}
+ 
+The amount, payment period, due date and acceptable methods for collection of
+dues shall be reviewed each year at the annual meeting.
+A majority vote of the members at the annual meeting may change the procedure
+and terms for payment of dues.
+A member may request that their membership be put in suspension for a maximum
+of 3 months.
+Member dues are owed on or before the 15\th of every month.
+
+\subsection{Voting Membership Rights and Responsibilities}
+ 
+Each voting member shall have an equal right to voice their opinion and vote
+their preference or abstain from voting in the affairs of the corporation.
+Each voting member shall exercise only one vote for each decision before the
+corporation.
+Each voting member shall have reasonable inspection rights of corporate
+records.
+Each voting member shall be responsible for timely payment of dues, providing
+their current address, contact information, and preference for electronic
+receipt of communications.
+Each voting member is responsible for continuing to support the purposes of the
+corporation.
+
+Each voting member shall have the right to access the space 24 hours a day, 7
+days a week.
+Each voting member shall have the right to use equipment and supplies purchased
+by the corporation for purposes subject to and within the limits of
+\ref{whyweexist}. 
+
+\subsection{Voting Membership Resignation and Termination}
+ 
+Any voting member may resign by filing a written resignation with the
+Secretary.
+Resignation shall not relieve a voting member of unpaid dues or other monies
+owed.
+Voting membership may be suspended for non-payment of dues by the Treasurer.
+Any suspended voting member may restore their membership 90 days after
+suspension upon payment of dues owed and payable through one month beyond the
+end of the suspension period, or upon the granting of a dues waiver as outlined
+in \ref{votmemdue}.
+Voting membership may also be terminated for any reason by written petition
+signed by more than three quarters ($\frac{3}{4}$) of the voting members.
+
+\subsection{Non-Voting Membership}
+ 
+The non-voting member class exists for fundraising, voting member recruitment,
+and honorary purposes.
+Non-voting memberships and membership titles are subject to voting member
+approval.
+Non-voting members do not have the right to vote in affairs of the corporation
+nor do they have any responsibilities towards it.
+Non-voting members have the right to be on the premises only when accompanied
+and supervised by a voting member.
+Non-voting members do not have the right to use equipment and supplies
+purchased by the corporation for self-directed projects.
+Non-voting members may only use these resources for the purposes of group
+projects under the supervision of a voting member.
+All other rights and responsibilities of non-voting members shall be explicitly
+stated by the Treasurer and subject to voting member approval.
+
+\section{Meetings}
+
+\subsection{Regular Meetings}
+ 
+Regular meetings of voting members shall be held every Tuesday at 19:30 local
+time at the registered office.
+A different meeting place may be designated by written petition signed by more
+than three quarters ($\frac{3}{4}$) of voting members.
+Regular meetings shall not take place on the day before, upon, or after a
+federal holiday unless specifically approved at the prior regular meeting or
+annual meeting.
+Meetings shall not take place on the day of a closure declared by the Office of
+Personnel Management. 
+
+\subsection{Annual Meetings}
+ 
+An annual meeting of all members shall take place sometime in January, February
+or March.
+The Board of Directors shall select the date, time and place no later than
+January 31 of each year.
+The date, time and place of the annual meeting must be posted in the registered
+office and submitted to members electronically at least two weeks prior to the
+annual meeting.
+A petition signed by more than three quarters ($\frac{3}{4}$) of voting members
+and submitted to the Board of Directors before President’s Day may specify a
+new date, time and place for the annual meeting.
+At the annual meeting, the voting members shall elect the Board of Directors,
+review and vote on the standing rules and policies of the corporation, receive
+reports on the activities of the corporation, approve the budget and determine
+the direction of corporation in the coming year. 
+
+\subsection{Special Meetings}
+\label{specialmeet}
+ 
+A petition presented to all voting members and signed by one third
+($\frac{1}{3}$) of voting members may call a special meeting.
+Such a petition must include the date, time, place and agenda of the special
+meeting. 
+
+\subsection{Notice of Meetings}
+ 
+The time and place of upcoming meetings shall be conspicuously posted at the
+registered office and electronically sent to all voting members.
+No notice is required for a regular meeting.
+Special meetings require 72 hours notice considered delivered only when all
+voting members are personally notified and given an opportunity to sign a
+special meeting petition.
+The agenda of the next upcoming meeting and minutes of the previous meeting
+shall be posted at the registered office and electronically submitted to all
+voting members at least 72 hours prior to any meeting. 
+
+\subsection{Quorum}
+ 
+At a duly called meeting, at least 50\% ($\frac{1}{2}$) of the entire voting
+membership shall constitute a quorum. 
+
+\subsection{Voting}
+ 
+When a quorum is present, all issues, except when otherwise specified in these
+bylaws, shall be decided by affirmative vote of more than 50\% ($\frac{1}{2}$)
+of the voting members present. 
+
+\subsection{Conduct of Meetings}
+\label{condofmeet}
+ 
+All meetings shall follow the Robert's Rules of Order as approved at an annual
+meeting.
+
+\section{The Officers}
+\label{officers}
+
+\subsection{Role, Number, Qualification, Term and Compensation}
+ 
+There shall be five officers consisting of President, Vice President,
+Secretary, Treasurer, and Sergeant at Arms.
+Each officer must be a director and each officer shall serve from the time of
+their election until their successor is elected and qualifies.
+No officer may serve more than 3 consecutive terms.
+A term shall begin at the conclusion of the annual meeting as defined in
+\ref{specialmeet} and shall last until the next annual meeting.
+No officer shall be compensated for their service as an officer, though the
+corporation may provide insurance and indemnity for officers as allowed by law.
+
+\subsection{Duties of the President}
+
+The President shall preside over all meetings or designate an alternate,
+attempt to achieve consensus in all decision-making, ensure the membership is
+informed of all relevant issues, and serve other duties of a President as
+required by law or custom. 
+
+\subsection{Duties of the Vice President}
+
+The Vice President shall be primarily responsible for the information systems
+and communication processes of the corporation, coordinate the teams that
+manage and design those systems, draft policies and procedures for information
+system use, ensure effective communication and information exchange within the
+corporation, and serving all other duties of a Vice President as required by
+law or custom, including acting when the President is unable or unwilling to
+act.
+
+\subsection{Duties of the Secretary}
+
+The Secretary shall be responsible for membership records including membership
+and board meeting actions and petitions, sending out meeting announcements,
+posting and distributing copies of membership meeting minutes and relevant
+meeting agendas to the membership, assuring that corporate records are
+maintained, and serving all other duties of a Secretary as required by law or
+custom. 
+
+\subsection{Duties of the Treasurer}
+
+The Treasurer shall be custodian of corporate funds, collect dues, make a
+financial report for each meeting, assist in the preparation of the budget,
+develop fundraising plans, make financial information available to members and
+the public, sneer at members who do not pay dues in a timely fashion and serve
+all other duties of a Treasurer as required by law or custom. 
+
+\subsection{Duties of the Sergeant at Arms}
+
+The Sergeant at Arms keeps order at all meetings.
+Makes sure that everyone upholds the rules outlined in \ref{condofmeet} during
+all meetings.
+
+\subsection{Duties of the Officers as whole to provide an Annual Report}
+ 
+The Officers must prepare an annual report to be distributed at the annual
+meeting.
+The report should chronicle the activities of the corporation, including
+specific narratives on the corporation's work, the corporation's annual
+financial statements, relevant legal filings, and relevant copies of the
+organization's district and federal tax returns.
+
+\subsection{Officers are Directors}
+ 
+The officers shall also serve as bona-fide directors on the Board of Directors.
+Election, resignation, removal and vacancies of the officers are handled in
+accordance with procedures laid out in \ref{boardofdirect}.
+
+\section{The Board of Directors}
+\label{boardofdirect}
+
+\subsection{Role, Size, Term and Compensation}
+ 
+The Board of Directors shall consist of the five officers as defined in
+\ref{officers}, all of whom are considered directors for the purposes of this
+article.
+All directors must be voting members of the corporation.
+Each director shall serve from the time of their election until their successor
+is elected and qualifies.
+No member may serve more than 3 consecutive terms on the board of directors.
+No director may be compensated for their service as a board member, though the
+corporation may provide insurance and indemnity for board members as allowed by
+law.
+
+\subsection{Meetings}
+ 
+The board of directors shall meet when necessary, provided all voting members
+receive notice sent electronically at least five business days prior to the
+meeting.
+All voting members may attend a meeting of the board of directors.
+The notice shall give the time, place, reason for calling the meeting and the
+agenda for said meeting.
+Notices shall be conspicuously posted at the registered office and
+electronically distributed to all members at least five business days prior to
+a meeting.
+Minutes shall follow the standing rules for meetings as approved at an annual
+meeting.
+Minutes of each board meeting shall be conspicuously posted at the registered
+office and electronically distributed to members within 48 hours.
+Minutes shall be considered approved when signed by all board members in
+attendance.
+
+\subsection{Elections}
+\label{elections}
+ 
+Each member present shall be given an opportunity to be a candidate for each
+officer position.
+If there is more than one candidate for an officer position, the candidate
+which obtains the highest number votes from voting members present shall be
+elected.
+If there are no candidates for an officer position, the outgoing officeholder
+may, if eligible, elect to serve another term or select any willing member to
+serve in that position.
+
+\subsection{Quorum}
+ 
+Two thirds of board of directors at a duly called board member meeting shall
+constitute a quorum. 
+
+\subsection{Voting}
+ 
+All issues, except when otherwise specified in these bylaws, shall be decided
+by affirmative vote of more than half of the directors present at a duly held
+meeting. 
+
+\subsection{Resignation, Termination and Vacancies}
+ 
+Any officer or director may resign by filing a written resignation with the
+Secretary or two other board members.
+A Director may be removed from office only by unanimous vote of all directors
+excluding the person to be removed.
+Once a vote has taken place to remove a member of the board of directors no
+further votes may occur to remove the director voted on until the following
+annual meeting.
+Vacancies on the board shall be filled at the next regular meeting using the
+applicable process outlined in \ref{elections}.
+
+Directors removed by vote of directors may qualify to run for office again
+immediately after being removed from office.
+
+\section{Committees}
+
+\subsection{Committee formation}
+
+The board may create committees as needed, such as fundraising, facilities,
+public relations, data collection, etc.
+The board chair appoints all committee chairs.
+
+\subsection{Finance Committee}
+
+The treasurer is the chair of the Finance Committee, which may include three
+other board members.
+The Finance Committee is responsible for developing and reviewing fiscal
+procedures, fundraising plans, and the annual budget with Member volunteers and
+other Board Members.
+The board must approve the budget and all expenditures must be within budget.
+Any major change in the budget must be approved by the board.
+The fiscal year shall be the calendar year.
+Annual reports are required to be submitted to the board showing income,
+expenditures, and pending income.
+The financial records of the organization are public information and shall be
+made available to the membership, board members, and the public.
+
+\subsection{Auditing Committee}
+
+On or before September 30, the members shall nominate and approve an audit
+committee consisting of three voting members who are not members of the board
+of directors and have not served as a director for 180 days prior to
+appointment.
+The audit committee shall have full inspection rights to the affairs and
+documentation of the corporation.
+No audit committee shall be convened if the corporation has fewer than nine
+voting members.
+Otherwise, the board or voting members may not create committees or delegate
+their authority. 
+
+\section{Amendments}
+\label{amendments}
+ 
+These bylaws may be amended only when an amendment proposal petition is
+approved at a membership meeting and signed by more than three quarters
+($\frac{3}{4}$) of voting members.
+Written notice of such petition must be submitted electronically to all members
+and delivered to all members of the corporation physically in person or by
+registered mail to take effect.
+
+\end{document}
