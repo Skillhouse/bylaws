@@ -1,0 +1,94 @@
+\documentclass[10pt,letterpaper,titlepage]{article}
+\usepackage{titletoc}
+
+\usepackage{ifthen,varioref}
+\usepackage{url}
+\usepackage{titlesec}
+\usepackage{fullpage}
+\usepackage{ulem}
+\usepackage{hyperref}
+
+% fix block paragraphs in toc
+\usepackage{parskip}
+% use block paragraphs
+\setlength{\parindent}{0pt}
+%\setlength{\parskip}{\baselineskip}
+\setlength{\parskip}{4pt}
+
+\newcommand\corpname{Gainesville Hackerspace, Inc.}
+\newcommand\approvaldate{March 9, 2010}
+
+\hypersetup{
+    pdfauthor={Ian Taylor},
+    pdftitle={\corpname{} Bylaws},
+    pdfborder={0 0 0},
+    pdfsubject={bylaws},
+    pdfkeywords={bylaws, \corpname},
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    bookmarks=true,
+    colorlinks=false
+}
+
+\titlecontents{section}[1.5em]
+    {}
+    {\contentslabel{2.0em}}
+    {\hspace*{-2.0em}}
+    {\titlerule*[1pc]{.}\contentspage}
+
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\arabic{subsection}}
+\titleformat{\section}{\bfseries\Large}{Article~\thesection}{0.5em}{}
+\titleformat{\subsection}{\bfseries\large}{Section~\thesubsection}{0.5em}{}
+\labelformat{section}{Article~#1}
+\labelformat{subsection}{\protect\iscurrentsection{\thesection}Section~#1}
+\newcommand\iscurrentsection[1]{%
+    \ifthenelse{\equal{#1}{\thesection}}{}{Article~#1~}}
+
+% for things like 1\st 2\nd 3\rd 4\th
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+\renewcommand{\th}[0]{\superscript{th}}
+\newcommand{\st}[0]{\superscript{st}}
+\newcommand{\nd}[0]{\superscript{nd}}
+\newcommand{\rd}[0]{\superscript{rd}}
+
+\title{%
+    \textsc{\LARGE \corpname \\
+    \Large Policies
+    }
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Membership dues}
+\label{dues}
+
+New members are expected to pay ``first and last'' months dues at
+joining.  This permits \corpname to have a little time in which to
+replace members.
+
+Dues are due on the 15th of the month.
+
+Dues may not be waived.
+
+
+
+\section{Meeting schedule}
+
+Open meetings will be held weekly, on Tuesday evening, starting at 7:00 PM.
+
+Board meetings will be held the first tuesday of the month, adjacent
+to or during the weekly open meeting.
+
+Membership meetings will be held the first tuesday of the month,
+adjacent to or during the weekly open meeting.
+
+
+\end{document}
